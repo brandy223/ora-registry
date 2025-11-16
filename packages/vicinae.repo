@@ -7,7 +7,7 @@ type = "github-releases"  # or "gitlab-releases", "custom-api", "direct-url"
 repo = "vicinaehq/vicinae"
 
 [source.download]
-url = "https://github.com/vicinaehq/vicinae/releases/download/v{version}/vicinae-{os}-{arch}.tar.gz/"
+url = "https://github.com/vicinaehq/vicinae/releases/download/{version}/vicinae-{os}-{arch}.tar.gz/"
 
 [platform]
 [platform.os_map]
