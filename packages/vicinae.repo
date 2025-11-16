@@ -14,7 +14,7 @@ url = "https://github.com/vicinaehq/vicinae/releases/download/{version}/vicinae-
 linux = "linux"
 
 [platform.arch_map]
-x86_64 = "amd64"
+amd64 = "x86_64"
 
 [install]
 mode = "userland"
