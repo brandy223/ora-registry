@@ -1,0 +1,36 @@
+name = "package-name"
+homepage = "https://github.com/vicinaehq/vicinae"
+
+[source]
+type = "github-releases"  # or "gitlab-releases", "custom-api", "direct-url"
+repo = "vicinaehq/vicinae"
+
+[source.download]
+url = "https://github.com/vicinaehq/vicinae/releases/download/{version}/vicinae-{os}-{arch}.tar.gz/"
+
+
+[platform]
+[platform.os_map]
+linux = "linux"
+
+[platform.arch_map]
+x86_64 = "amd64"
+
+[install]
+mode = "userland"
+binaries = ["vicinae-*/vicinae"]
+
+[security]
+allow_insecure = false
+
+# NO CHECKSUMS AVAILABLE
+# [security.checksum]
+# url = "https://github.com/prometheus/prometheus/releases/download/v{version}/sha256sums.txt"
+# algorithm = "sha256"
+# format = "multi-hash"
+
+
+[metadata]
+license = "GPL-3.0 license"
+authors = ["vicinaehq"]
+tags = ["tools"]
